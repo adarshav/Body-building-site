@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Bootstrap cdn  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- jQuery cdn -->
@@ -12,20 +13,21 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
     <title>Bodybuilding.com - Huge Online Supplement Store & Fitness Community</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
-    <h2>Bodybuilding.com</h2><hr>
+<body class = "body">
+  <!-- Header row -->
+    <header class = "row">
+      <div class = "col-12">
+          <h1 style="text-shadow: 2px 2px #800000;"class=" text-center">Bodybuilding.com</h1>
+      </div>
+    </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <img src="./img/unnamed.jpg" alt="" width = "45" height = "10"> -->
         <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <a class="navbar-brand" href="#">Contact Us</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
+        <a class="navbar-brand" href="./LogIn.html">LogIn</a>
+
+        <a class="navbar-brand" href="#">Contact Us</a>        
         <!-- <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,11 +37,45 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <input type= "text" placeholder="Search By Item" name = "search">
         </div>
       </nav>
+
+      <section class = "row img">
+          <div class = "col-12">
+            <img src="./img/e35.jpg" alt="The page is not loadinng  your internet seems to be slow">
+          </div>
+        </section>
+      <div class = "row">
+        <div class = "col-4">
+          <p>iam here</p>
+        </div>
+        <div class ="col-4">
+          <p>Iam here</p>
+        </div>
+        <div class = "products">
+          <a href="">
+              <div class = "col-4" style="background-color:chocolate">
+                  <h2>Products</h2>
+                  <p> Lorem ipsum, addsdsacjjnsi
+                    snfjddodjwpoj
+                  </p>
+                </div>
+          </a>
+            
+        </div>
+        
+      </div>
+      <script>
+        $(document).ready( function() {
+          $('#products').hover(
+              function() {
+                  $(this).animate({ 'zoom': 1.2 }, 400);
+    },
+    function() {
+        $(this).animate({ 'zoom': 1 }, 400);
+    });
+})
+      </script>
 </body>
 </html>
